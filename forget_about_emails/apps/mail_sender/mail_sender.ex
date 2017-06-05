@@ -1,6 +1,6 @@
 defmodule MailSender do
   
-  def send(%MailServerConf, text) do
+  def start(_type, _args) do
     
   end
 end

@@ -19,7 +19,10 @@ defmodule MailSender.Mixfile do
   # Type "mix help compile.app" for more information
   def application do
     # Specify extra applications you'll use from Erlang/Elixir
-    [extra_applications: [:logger]]
+    [
+      applications: [:bamboo, :bamboo_smtp],
+      extra_applications: [:logger],
+      mod: {MailSender, []}]
   end
 
   # Dependencies can be Hex packages:
@@ -36,6 +39,8 @@ defmodule MailSender.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [
+      {:bamboo, "~> 0.8"},
+      {:bamboo_smtp, "~> 1.3.0"}]
   end
 end
