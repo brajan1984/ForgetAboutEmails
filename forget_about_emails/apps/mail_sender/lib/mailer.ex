@@ -1,5 +1,5 @@
 defmodule MailSender.Mailer do
-  use Bamboo.Mailer, otp_app: :mail_sender
+  use Bamboo.Mailer, otp_app: :my_app
   
   
   @doc """
