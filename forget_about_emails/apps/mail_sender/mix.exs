@@ -41,6 +41,7 @@ defmodule MailSender.Mixfile do
   defp deps do
     [
       {:bamboo, "~> 0.8"},
-      {:bamboo_smtp, "~> 1.3.0"}]
+      {:bamboo_smtp, "~> 1.3.0"},
+      {:dialyxir, "~> 0.5.0", only: [:dev], runtime: false}]
   end
 end

@@ -1,4 +1,4 @@
-defmodule MailSender.Mailer do
+defmodule MailSender.BambooMailer do
   use Bamboo.Mailer, otp_app: :my_app
   
   
