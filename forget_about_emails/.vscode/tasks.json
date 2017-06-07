@@ -6,7 +6,7 @@
   "suppressTaskName": true,
   "tasks": [
     {
-      "taskName": "compile",
+      "taskName": "build",
       "args": [
         "compile"
       ],
