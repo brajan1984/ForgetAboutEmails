@@ -1,6 +1,6 @@
 # PeriodicTrigger
 
-**TODO: Add description**
+**Application for periodic action call**
 
 ## Installation
 
