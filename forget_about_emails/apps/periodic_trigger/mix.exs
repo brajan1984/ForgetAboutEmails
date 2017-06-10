@@ -20,8 +20,9 @@ defmodule PeriodicTrigger.Mixfile do
   def application do
     # Specify extra applications you'll use from Erlang/Elixir
     [
+      applications: [:quantum, :timex],
       extra_applications: [:logger],
-      mod: {PeriodicTrigger, []}]]
+      mod: {PeriodicTrigger.Application, []}]
   end
 
   # Dependencies can be Hex packages:
@@ -38,6 +39,9 @@ defmodule PeriodicTrigger.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [
+      {:quantum, ">= 2.0.0-beta.1"},
+      {:timex, "~> 3.0"},
+      {:dialyxir, "~> 0.5.0", only: [:dev], runtime: false}]
   end
 end

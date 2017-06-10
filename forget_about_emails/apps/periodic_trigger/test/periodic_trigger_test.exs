@@ -1,5 +1,5 @@
 defmodule PeriodicTriggerTest do
   use ExUnit.Case
-  doctest PeriodicTrigger
-  
+  doctest PeriodicTrigger.ConsoleWriterAction
+
 end
