@@ -9,6 +9,5 @@ defmodule PeriodicTrigger.ConsoleWriterAction do
   """
   def action_do(args) do
     IO.puts("hello #{args}")
-    :timer.sleep(120000)
   end
 end
