@@ -9,7 +9,8 @@ defmodule FilesCompressor.Zip do
 
   @spec collect_files(String.t) :: list
   defp collect_files(source_path) do
-    File.ls(source_path)
+      File.ls(source_path)
+      |> elem(1)
       |> Enum.map(fn filename -> Path.join(source_path, filename) end)
       |> Enum.map(&String.to_char_list(&1))
   end
