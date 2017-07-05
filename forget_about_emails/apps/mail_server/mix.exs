@@ -1,8 +1,8 @@
-defmodule PeriodicTrigger.Mixfile do
+defmodule MailServer.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :periodic_trigger,
+    [app: :mail_server,
      version: "0.1.0",
      build_path: "../../_build",
      config_path: "../../config/config.exs",
@@ -19,10 +19,8 @@ defmodule PeriodicTrigger.Mixfile do
   # Type "mix help compile.app" for more information
   def application do
     # Specify extra applications you'll use from Erlang/Elixir
-    [
-      applications: [:quantum, :timex],
-      extra_applications: [:logger],
-      mod: {PeriodicTrigger, []}]
+    [extra_applications: [:logger],
+     mod: {MailServer.Application, []}]
   end
 
   # Dependencies can be Hex packages:
@@ -39,9 +37,6 @@ defmodule PeriodicTrigger.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [
-      {:quantum, ">= 2.0.0-beta.1"},
-      {:timex, "~> 3.0"},
-      {:dialyxir, "~> 0.5.0", only: [:dev], runtime: false}]
+    []
   end
 end
