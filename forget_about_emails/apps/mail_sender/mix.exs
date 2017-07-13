@@ -22,7 +22,7 @@ defmodule MailSender.Mixfile do
     [
       applications: [:bamboo, :bamboo_smtp],
       extra_applications: [:logger],
-      mod: {MailSender, []}]
+      mod: {MailSender.Application, []}]
   end
 
   # Dependencies can be Hex packages:

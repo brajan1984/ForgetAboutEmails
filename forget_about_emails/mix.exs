@@ -21,6 +21,6 @@ defmodule ForgetAboutEmails.Mixfile do
   # Dependencies listed here are available only for this project
   # and cannot be accessed from applications inside the apps folder
   defp deps do
-    []
+    [{:periodic_trigger, in_umbrella: true}]
   end
 end

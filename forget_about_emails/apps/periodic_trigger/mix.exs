@@ -22,7 +22,7 @@ defmodule PeriodicTrigger.Mixfile do
     [
       applications: [:quantum, :timex],
       extra_applications: [:logger],
-      mod: {PeriodicTrigger, []}]
+      mod: {PeriodicTrigger.Application, []}]
   end
 
   # Dependencies can be Hex packages:

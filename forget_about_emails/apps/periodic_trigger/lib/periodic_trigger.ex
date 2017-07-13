@@ -1,4 +1,4 @@
-defmodule PeriodicTrigger.Scheduler do
+defmodule PeriodicTrigger do
   use Quantum.Scheduler, otp_app: :your_app
 
 end

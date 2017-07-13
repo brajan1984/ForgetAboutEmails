@@ -5,7 +5,7 @@ defmodule PeriodicTrigger.Application do
     import Supervisor.Spec, warn: false
 
     children = [
-      worker(PeriodicTrigger.Scheduler, [])
+      worker(PeriodicTrigger, [])
     ]
 
     opts = [strategy: :one_for_one, name: PeriodicTrigger.Supervisor]
