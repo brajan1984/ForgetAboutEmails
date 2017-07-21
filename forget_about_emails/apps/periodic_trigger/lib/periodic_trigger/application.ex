@@ -4,6 +4,8 @@ defmodule PeriodicTrigger.Application do
   def start(_type, _args) do
     import Supervisor.Spec, warn: false
 
+    IO.puts("Starting PeriodicTrigger!")
+
     children = [
       worker(PeriodicTrigger, [])
     ]
