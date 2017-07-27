@@ -1,4 +1,4 @@
 use Mix.Config
 
-config :my_app, MailSender.BambooMailer,
+config :my_app, MailSender,
   adapter: Bamboo.TestAdapter
